@@ -1,0 +1,71 @@
+{% extends "layout/login_base.html" %}{% block logincontent %}
+
+<div id="login-box" class="login-box signup-box visible widget-box no-border">
+    <div class="widget-body">
+        <div class="widget-main">
+            <h4 class="header blue lighter bigger">
+                <i class="icon-coffee green"></i>
+                Please Enter Your Information
+            </h4>
+
+            <div class="space-6"></div>
+
+            <form method="POST">
+                <fieldset>
+                    <label class="block clearfix">
+                        <span class="block input-icon input-icon-right">
+                            <input type="email" class="form-control" id="email" name="email" placeholder="Email" />
+                            <i class="icon-user"></i>
+                        </span>
+                    </label>
+
+                    <label class="block clearfix">
+                        <span class="block input-icon input-icon-right">
+                            <input type="password" class="form-control" id="password" name="password"
+                                placeholder="Password" />
+                            <i class="icon-lock"></i>
+                        </span>
+                    </label>
+
+                    <div class="space"></div>
+
+                    <div class="clearfix">
+                        <label class="inline">
+                            <input type="checkbox" class="ace" />
+                            <span class="lbl"> Remember Me</span>
+                        </label>
+
+                        <button type="submit" class="width-35 pull-right btn btn-sm btn-primary">
+                            <i class="icon-key"></i>
+                            Login
+                        </button>
+                    </div>
+
+                    <div class="space-4"></div>
+                </fieldset>
+            </form>
+
+            <div class="toolbar center">
+                <a href="/sign-up" class="user-signup-link">
+                    Register
+                    <i class="icon-arrow-right"></i>
+                </a>
+            </div>
+        </div><!-- /widget-body -->
+    </div>
+</div><!-- /login-box -->
+<!-- 
+    <form method="POST">
+        <h3 align="center">Login</h3>
+        <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" class="form-control" id="email" name="email" placeholder="Enter email" />
+        </div>
+        <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" class="form-control" id="password" name="password" placeholder="Enter password" />
+        </div>
+        <br />
+        <button type="submit" class="btn btn-primary">Login</button>
+    </form> -->
+{% endblock %}
